@@ -64,13 +64,17 @@ button:hover {
   background-color: #ffb700;
   color: #fff;
 }
+.del {
+  font-size: 25px;
+  background-color: #ff4136;
+}
 .operator:hover {
   background-color: #db9200;
 }
 
 .equals {
   background-color: #ffb700;
-  grid-row: span 3;
+  grid-row: span 2;
   color: #fff;
   font-size: 30px;
   font-weight: 600;

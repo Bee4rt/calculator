@@ -4,7 +4,9 @@ const btns = document.querySelectorAll("button");
 // functions
 
 //clear function
-function clearResult() {}
+function clearResult() {
+  result.value = "";
+}
 
 //calculate function
 function calculateResult() {
@@ -16,6 +18,11 @@ function appendValue(btnValue) {
   result.value += btnValue;
 }
 
+//delete function
+function delValue(btnValue) {
+  result.value -= btnValue;
+}
+
 ///////////////////////////////////////////////////////
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
@@ -24,6 +31,8 @@ for (let i = 0; i < btns.length; i++) {
       clearResult();
     } else if (btnValue === "=") {
       calculateResult();
+    } else if (btnValue === "del") {
+      delValue(btnValue);
     } else {
       appendValue(btnValue);
     }
