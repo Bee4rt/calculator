@@ -59,6 +59,8 @@ button:hover {
 }
 
 .operator {
+  font-size: 30px;
+  font-weight: 600;
   background-color: #ffb700;
   color: #fff;
 }
@@ -70,6 +72,8 @@ button:hover {
   background-color: #ffb700;
   grid-row: span 3;
   color: #fff;
+  font-size: 30px;
+  font-weight: 600;
 }
 .zero {
   grid-column: span 2;
