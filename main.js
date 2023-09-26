@@ -20,7 +20,8 @@ function appendValue(btnValue) {
 
 //delete function
 function delValue(btnValue) {
-  result.value -= btnValue;
+  let res = result.toString().slice(0, -1);
+  result.innerHTML = res;
 }
 
 ///////////////////////////////////////////////////////
@@ -31,8 +32,6 @@ for (let i = 0; i < btns.length; i++) {
       clearResult();
     } else if (btnValue === "=") {
       calculateResult();
-    } else if (btnValue === "del") {
-      delValue(btnValue);
     } else {
       appendValue(btnValue);
     }
