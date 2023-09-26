@@ -7,10 +7,14 @@ const btns = document.querySelectorAll("button");
 function clearResult() {}
 
 //calculate function
-function calculateResult() {}
+function calculateResult() {
+  result.value = eval(result.value);
+}
 
-//append function
-function appendValue(btnValue) {}
+//append function add number to the input += to add number not replace them
+function appendValue(btnValue) {
+  result.value += btnValue;
+}
 
 ///////////////////////////////////////////////////////
 for (let i = 0; i < btns.length; i++) {
@@ -21,7 +25,7 @@ for (let i = 0; i < btns.length; i++) {
     } else if (btnValue === "=") {
       calculateResult();
     } else {
-      appendValue();
+      appendValue(btnValue);
     }
   });
 }
